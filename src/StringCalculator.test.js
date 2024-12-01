@@ -12,3 +12,7 @@ test("return the number itself for single number", () => {
 test("return the sum of two numbers", () => {
     expect(add("1,2")).toBe(3);
 })
+
+test("handles multiple numbers", () => {
+    expect(add("1,2,3,4")).toBe(10)
+})

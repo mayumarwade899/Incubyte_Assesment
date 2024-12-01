@@ -1,8 +1,10 @@
+function add(numbers) {
+  if (numbers === "") return 0;
 
-function add (numbers) {
-        if(numbers === "") return 0;
-        if(numbers === "1") return 1;
-        if(numbers === "1,2") return 3;
-    }
+  return numbers
+    .split(",")
+    .map(Number)
+    .reduce((sum, num) => sum + num, 0);
+}
 
-export default add
+export default add;
