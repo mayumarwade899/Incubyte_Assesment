@@ -1,5 +1,5 @@
 
-const add = (numbers) =>  {
+function add (numbers) {
         if(numbers === "");  //Hardcoded for empty string
         return 0;
     }
